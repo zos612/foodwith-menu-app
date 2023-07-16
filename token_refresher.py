@@ -3,8 +3,10 @@ import requests
 import json
 import schedule
 import time
+from datetime import datetime
 
 def job():
+    print('작업 실행시간:', datetime.now())
     # 카카오톡 메시지 API
     url = "https://kauth.kakao.com/oauth/token"
     data = {
@@ -21,9 +23,9 @@ def job():
         json.dump(tokens, fp)
         print("액세스 토큰이 생성되었습니다.")
 
-job()
+# job()
 
-schedule.every(4).hours.do(job)
+schedule.every(6).hours.do(job)
 
 while True:
     schedule.run_pending()
