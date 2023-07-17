@@ -34,6 +34,8 @@ RUN mv /usr/bin/google-chrome-stable /usr/bin/google-chrome
 # RUN unzip chromedriver_linux64.zip
 RUN mv ./temp/chromedriver /usr/bin/chromedriver
 
+#리눅스 시스템 시간 UTC에서 KST로 변경
+RUN sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime
 
 RUN rm -r /home/app/temp
 
