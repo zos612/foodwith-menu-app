@@ -4,6 +4,9 @@
 **푸드위드 사이트**   
 https://pf.kakao.com/_eAGqxb    
 # 실행 방법
+### 도커 빌드 및 실행
+docker build -t food-with-menu-app .   
+docker run -it -v .:/home/app --name food-with-menu-app food-with-menu-app bash
 ### 앱실행
 nohup python -u app.py >> app.log 2>&1 &   
 ### 토큰 갱신
