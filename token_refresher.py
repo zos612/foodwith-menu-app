@@ -15,7 +15,7 @@ def job():
     data = {
         "grant_type" : "refresh_token",
         "client_id" : "0df3b630c4634ebd737f58c96b5e74be",
-        "refresh_token": "_RHa8zVaPxLbhiTqgVBL7ZTQcLMRGYXxt25LWfisCisM0gAAAYlkRbPy" #kakao_code['refresh_token']
+        "refresh_token": "" #kakao_code['refresh_token']
     }
     response = requests.post(url, data=data)
     tokens = response.json()
