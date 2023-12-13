@@ -1,7 +1,7 @@
 # 소개
 푸드위드 사이트의 메뉴를 크롤링해서 카카오 메세지를 보내는 앱입니다.  
 
-![image](https://github.com/zos612/food-with-menu-app/assets/13166673/8aa070d6-eb2f-49ba-bf13-7c544a9066b9)
+![image](https://github.com/zos612/foodwith-menu-app/assets/13166673/8aa070d6-eb2f-49ba-bf13-7c544a9066b9)
 
 **푸드위드 사이트**   
 https://pf.kakao.com/_eAGqxb    
@@ -17,8 +17,8 @@ https://kauth.kakao.com/oauth/authorize?client_id=0df3b630c4634ebd737f58c96b5e74
 4. kakao_code.json에 엑세스 토큰과 리프레쉬 토큰이 새로 생성된다.
 
 ### 도커 빌드 및 실행
-docker build -t food-with-menu-app .   
-docker run -it -v .:/home/app --name food-with-menu-app food-with-menu-app bash
+docker build -t foodwith-menu-app .   
+docker run -it -v .:/home/app --name foodwith-menu-app foodwith-menu-app bash
 ### 앱실행
 nohup python -u app.py >> app.log 2>&1 &   
 ### 토큰 갱신
