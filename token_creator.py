@@ -6,9 +6,9 @@ import json
 url = "https://kauth.kakao.com/oauth/token"
 data = {
     "grant_type" : "authorization_code",
-    "client_id" : "0df3b630c4634ebd737f58c96b5e74be",
+    "client_id" : "x",
     "redirect_url" : "https://localhost:3000",
-    "code" : "z67SZgxow8VpY_t_47tKLhJBHbP4CC8Q9Tj0UbwmrW374uHiT3bEmEq9pB08ADK0w2wmYAopyWAAAAGJZEVCww"
+    "code" : "x"
 }
 response = requests.post(url, data=data)
 tokens = response.json()
